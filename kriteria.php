@@ -52,7 +52,9 @@
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
-                                    <a href="tambah_kriteria.php" class="btn btn-primary mb-3"><i class="fas fa-fw fa-plus"></i> Tambah Kriteria</a>
+                                    <?php if ($dataUser['jabatan'] == 'Admin'): ?>
+                                        <a href="tambah_kriteria.php" class="btn btn-primary mb-3"><i class="fas fa-fw fa-plus"></i> Tambah Kriteria</a>
+                                    <?php endif ?>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
                                             <thead>

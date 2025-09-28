@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Sep 2025 pada 13.16
+-- Waktu pembuatan: 28 Sep 2025 pada 13.43
 -- Versi server: 10.4.27-MariaDB
 -- Versi PHP: 7.4.33
 
@@ -168,7 +168,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `nama`, `jabatan`, `dibuat_pada`) VALUES
 (1, 'admin', '$2y$10$eZTNeQSWW9FOS8H21khtIuyQaNf7DMQXtGSzm6RI5CrNz.rilbPoi', 'Administrator', 'Admin', '2025-02-10 14:27:42'),
-(6, 'guru', '$2y$10$pLR21DQbjBSz6cJaAhgMauHXvTR5R75AezGOGk..LastENFKOMKgq', 'guru', 'Petugas', '2025-02-22 15:16:52');
+(6, 'guru', '$2y$10$eZTNeQSWW9FOS8H21khtIuyQaNf7DMQXtGSzm6RI5CrNz.rilbPoi', 'guru', 'Petugas', '2025-02-22 15:16:52');
 
 --
 -- Indexes for dumped tables

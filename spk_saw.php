@@ -76,8 +76,10 @@
                                                         <td><?= $dk['dibuat_pada']; ?></td>
                                                         <td>
                                                             <a href="hasil_spk_saw.php?id_hasil_saw=<?= $dk['id_hasil_saw']; ?>" class="btn btn-primary"><i class="fas fa-fw fa-bars"></i> Detail</a>
-                                                            <a href="ubah_spk_saw.php?id_hasil_saw=<?= $dk['id_hasil_saw']; ?>" class="btn btn-success"><i class="fas fa-fw fa-edit"></i> Ubah</a>
-                                                            <a href="hapus_spk_saw.php?id_hasil_saw=<?= $dk['id_hasil_saw']; ?>" class="btn btn-danger btn-delete" data-nama="<?= $dk['nama_siswa']; ?>"><i class="fas fa-fw fa-trash"></i> Hapus</a>
+                                                            <?php if ($dataUser['jabatan'] == 'Admin'): ?>
+                                                                <a href="ubah_spk_saw.php?id_hasil_saw=<?= $dk['id_hasil_saw']; ?>" class="btn btn-success"><i class="fas fa-fw fa-edit"></i> Ubah</a>
+                                                                <a href="hapus_spk_saw.php?id_hasil_saw=<?= $dk['id_hasil_saw']; ?>" class="btn btn-danger btn-delete" data-nama="<?= $dk['nama_siswa']; ?>"><i class="fas fa-fw fa-trash"></i> Hapus</a>
+                                                            <?php endif ?>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach ?>

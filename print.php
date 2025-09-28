@@ -57,7 +57,7 @@
     }
 ?>
     <div class="print-container">
-        <h2 class="text-center">Laporan Hasil SPK SAW</h2>
+        <h2 class="text-center">Laporan Hasil SPK SAW Siswa Terbaik SMAN 6</h2>
         <?php if (isset($_GET['dari_tanggal'])) : ?>
             <p class="text-right">Dari Tanggal: <?= date('d-m-Y', strtotime($dari_tanggal)); ?> Sampai Tanggal: <?= date('d-m-Y', strtotime($sampai_tanggal)); ?></p>
         <?php endif ?>
